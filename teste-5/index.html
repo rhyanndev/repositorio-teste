@@ -1,0 +1,34 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio Inverter Palavra</title>
+    </head>
+    <body>
+        
+        <label>Digite a palavra:</label>
+        <input type="text" id="texto">
+        <button onclick="inverterPalavra()">inverter</button>
+
+
+        <div id="resultado"></div>
+
+
+
+        <script>
+
+            function inverterPalavra(){
+
+
+                let $texto = document.getElementById("texto").value;
+
+                let inverso = $texto.split("").reverse().join("");
+
+                document.getElementById("resultado").textContent = `A palavra invertida é ${inverso}`;
+
+            }
+
+        </script>
+    </body>
+    </html>
